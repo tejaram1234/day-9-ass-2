@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 100px;
+            height: 30px;
+        }
+        p{
+            font-size: 25px;
+        }
+        B{
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1> 2. Color Generator:</h1>
+    <h3>click the below button to know the color generation:</h3>
+<div id="myDIV">
+    <button onclick="myFunction()">try it</button>
+</div>
+<br>
+<br>
+ <h1>Event Propagation:</h1>
+    <p>Event Propagation determines in which order the elements recives the event.</p>
+    <h2>There are two ways to handle the event propagation order of HTML DOM is <B>Event Bubbling </B>and <B>Event Capturing</B></h2>
+    <p>we take four elements as example Element1 ,Element2,element3,Element4  now when attache <B>onclick EventListener</B> when you click on the any element  all the 4 elements will be exicuted but here by the  <B>Event bubbling and Event Capturing </B>will handel the order of exicution.</p>
+</body>
+</html>
+
+
+<script>
+    var color =["blue","red"]
+function myFunction() {
+  document.getElementById("myDIV").style.backgroundColor = color[Math.floor(Math.random()*color.length)];
+}
+</script>
+</script>
+</html>
